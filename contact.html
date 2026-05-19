@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAVA Studio — Связь</title>
+  <meta name="description" content="LAVA Studio — студия концептуального дизайна частных домов, фасадов, планировок и архитектурной визуализации для клиентов из Казахстана и СНГ." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="./index.html" class="brand" aria-label="LAVA Studio Home">
+        <img src="./images/logo.png" alt="LAVA Studio logo" class="brand-logo">
+        <span>LAVA Studio</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="./index.html">Главная</a>
+        <a href="./services.html">Услуги и процесс</a>
+        <a href="./contact.html" class="nav-cta is-active">Обсудить проект</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section id="contact" class="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Связь</p>
+          <h2>Расскажите нам о проекте, который хотите увидеть.</h2>
+          <p>
+            Напишите кратко: город, тип объекта, площадь, стадия проекта, что уже есть на руках и какой результат нужен — концепция, фасад, планировка, визуализация или полный презентационный пакет.
+          </p>
+        </div>
+
+        <div class="contact-list">
+          <a href="mailto:lavastudiokz@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span>Email</span>
+            <strong>lavastudiokz@gmail.com</strong>
+          </a>
+          <a href="https://wa.me/77759993503" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span>WhatsApp</span>
+            <strong>+7 775 999 35 03</strong>
+          </a>
+          <a href="https://instagram.com/lavastudiokz" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span>Instagram</span>
+            <strong>@lavastudiokz</strong>
+          </a>
+        </div>
+
+        <div class="section-actions">
+          <a href="./index.html" class="btn btn-section-home">← Вернуться на главную</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="notice-modal" id="noticeModal" role="dialog" aria-modal="true" aria-labelledby="noticeTitle" aria-hidden="true">
+    <div class="notice-modal-card">
+      <p class="eyebrow">Важно</p>
+      <h2 id="noticeTitle">Честное позиционирование</h2>
+      <div class="notice-modal-text">
+        <p>
+          LAVA Studio предоставляет услуги концептуального дизайна, архитектурной визуализации и подготовки презентационных материалов.
+        </p>
+        <p>
+          Мы не выполняем функции лицензированного архитектора, не подписываем официальные строительные документы, не подаём проекты на разрешение от имени клиента и не выполняем инженерные расчёты.
+        </p>
+        <p>
+          Для строительства, согласований, разрешений и технической адаптации клиенту необходимо обращаться к местному лицензированному архитектору, инженеру или проектировщику согласно требованиям своей страны и региона.
+        </p>
+      </div>
+      <div class="notice-modal-actions">
+        <button type="button" class="btn btn-accent" id="noticeOk">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 LAVA Studio. Residential Design & Architectural Visualization.</p>
+      <p>KZ / CIS</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAVA Studio — Услуги и процесс</title>
+  <meta name="description" content="LAVA Studio — студия концептуального дизайна частных домов, фасадов, планировок и архитектурной визуализации для клиентов из Казахстана и СНГ." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="./index.html" class="brand" aria-label="LAVA Studio Home">
+        <img src="./images/logo.png" alt="LAVA Studio logo" class="brand-logo">
+        <span>LAVA Studio</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="./index.html">Главная</a>
+        <a href="./services.html" class="is-active">Услуги и процесс</a>
+        <a href="./contact.html" class="nav-cta">Обсудить проект</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Services</p>
+            <h2>Услуги студии</h2>
+          </div>
+          <p>
+            Мы создаём визуальный и проектный язык будущего проекта — от первой идеи до понятного презентационного пакета, который удобно обсуждать с семьёй, строителями и местными специалистами.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Дизайн частных домов</h3>
+            <p>Концепции индивидуальных домов, вилл и коттеджей с вниманием к пропорциям, свету, планировке и общему образу здания.</p>
+            <ul>
+              <li>общая архитектурная идея</li>
+              <li>объём и внешний образ</li>
+              <li>стиль и настроение дома</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Фасады и экстерьер</h3>
+            <p>Разработка фасадных решений, подбор материалов, цветовых сочетаний и визуальной логики здания.</p>
+            <ul>
+              <li>варианты фасадов</li>
+              <li>материалы и текстуры</li>
+              <li>дневные и вечерние ракурсы</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Планировки</h3>
+            <p>Функциональные планировочные концепции, чтобы дом был понятным, удобным и логичным для реальной жизни.</p>
+            <ul>
+              <li>зонирование помещений</li>
+              <li>планировочные варианты</li>
+              <li>схемы движения и сценарии</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>3D и визуализация</h3>
+            <p>Фотореалистичные и атмосферные изображения для понимания объёма, материалов и будущего результата.</p>
+            <ul>
+              <li>Twinmotion / Revit workflow</li>
+              <li>Adobe post-production</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>CAD / BIM материалы</h3>
+            <p>Аккуратные чертежи и презентационные листы на базе AutoCAD и Revit для обсуждения проекта.</p>
+            <ul>
+              <li>планы</li>
+              <li>фасады</li>
+              <li>разрезы и схемы</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Презентационный проект</h3>
+            <p>Собранный дизайн-пакет, который клиент может использовать для обсуждения с локальным лицензированным проектировщиком.</p>
+            <ul>
+              <li>PDF-презентация</li>
+              <li>выбранные чертежи</li>
+              <li>рендеры и пояснения</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="project-portal-box">
+          <div class="project-portal-head">
+            <div>
+              <p class="eyebrow">Client Portal</p>
+              <h2>Спокойный и понятный процесс работы.</h2>
+            </div>
+            <p>
+              Введите ID проекта и PIN, чтобы открыть карточку проекта, текущую стадию, прогресс и предварительные материалы.
+            </p>
+          </div>
+
+          <div class="project-portal-content">
+            <form class="project-search-form" id="projectForm">
+              <div class="project-field">
+                <label for="projectId">ID проекта</label>
+                <input
+                  id="projectId"
+                  name="projectId"
+                  type="text"
+                  value="Lava-"
+                  placeholder="Lava-0000-0000-0000"
+                  autocomplete="off"
+                  maxlength="19"
+                  required
+                >
+                <small>Lava-0000-0000-0000</small>
+              </div>
+
+              <div class="project-field pin-field">
+                <label for="projectPin">PIN проекта</label>
+                <input
+                  id="projectPin"
+                  name="projectPin"
+                  type="password"
+                  placeholder="1234"
+                  inputmode="numeric"
+                  pattern="[0-9]{4}"
+                  maxlength="4"
+                  required
+                >
+                <small>PIN состоит из 4 цифр</small>
+              </div>
+
+              <button type="button" class="btn project-search-btn" id="projectSearchButton">Найти проект</button>
+
+              <p class="project-form-hint">
+                Чтобы посмотреть, как это работает, введите демо-данные проекта <br>ID: <strong>Lava-0000-0000-0000</strong><br>
+                PIN: <strong>1234</strong>
+              </p>
+              <p class="project-error" id="projectError">Проверьте ID проекта и PIN.</p>
+            </form>
+
+            <div class="project-result-area">
+              <div class="project-empty-state" id="projectEmptyState">
+                <span>Project card</span>
+                <strong>Информация появится здесь</strong>
+                <p>После поиска справа откроется карточка проекта со стадиями, прогрессом и материалами.</p>
+              </div>
+
+              <div class="project-dashboard" id="projectDashboard" aria-live="polite">
+                <div class="project-card-top">
+                  <div>
+                    <span>Project ID</span>
+                    <strong id="dashboardProjectId">Lava-0000-0000-0000</strong>
+                  </div>
+                  <div>
+                    <span>Current stage</span>
+                    <strong>2/4 · Concept Design</strong>
+                  </div>
+                </div>
+
+                <div class="progress-block">
+                  <div class="progress-label">
+                    <span>Project progress</span>
+                    <strong>50%</strong>
+                  </div>
+                  <div class="progress-bar" aria-label="Project progress 2 of 4">
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="project-stages">
+                  <div class="stage done">
+                    <span>1/4 проекта</span>
+                    <strong>Brief & References</strong>
+                    <p>Задача, референсы, пожелания клиента и исходные материалы.</p>
+                  </div>
+                  <div class="stage active">
+                    <span>2/4 проекта</span>
+                    <strong>Concept Design</strong>
+                    <p>Планировочная идея, фасадное направление и общий образ проекта.</p>
+                  </div>
+                  <div class="stage">
+                    <span>3/4 проекта</span>
+                    <strong>Visualization</strong>
+                    <p>Рендеры, материалы, интерьерные и экстерьерные виды.</p>
+                  </div>
+                  <div class="stage">
+                    <span>4/4 проекта</span>
+                    <strong>Final Package</strong>
+                    <p>Финальная презентация и материалы для передачи специалистам.</p>
+                  </div>
+                </div>
+
+                <div class="project-materials">
+                  <div class="materials-head">
+                    <span>Preliminary materials</span>
+                    <strong>Предварительные материалы для просмотра</strong>
+                  </div>
+
+                  <div class="materials-grid">
+                    <a href="./images/project-01.png" target="_blank" rel="noopener noreferrer" class="material-card">
+                      <img src="./images/project-01.png" alt="Preliminary project material 01">
+                      <span>Concept preview</span>
+                    </a>
+                    <a href="./images/project-02.png" target="_blank" rel="noopener noreferrer" class="material-card">
+                      <img src="./images/project-02.png" alt="Preliminary project material 02">
+                      <span>Facade preview</span>
+                    </a>
+                    <a href="./images/project-03.png" target="_blank" rel="noopener noreferrer" class="material-card">
+                      <img src="./images/project-03.png" alt="Preliminary project material 03">
+                      <span>Planning preview</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container page-end-actions">
+      <a href="./index.html" class="btn btn-section-home">← Вернуться на главную</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 LAVA Studio. Residential Design & Architectural Visualization.</p>
+      <p>KZ / CIS</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
